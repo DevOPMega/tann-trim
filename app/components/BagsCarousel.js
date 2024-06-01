@@ -15,7 +15,7 @@ const BagsCarousel = () => {
     <div className="my-4 lg:my-12">
       <div className="hidden gap-8 justify-between lg:flex">
         {bags.map((bag, i) => (
-          <div className="flex flex-col items-center gap-2 transition-transform cursor-pointer hover:scale-125">
+          <div key={i} className="flex flex-col items-center gap-2 transition-transform cursor-pointer hover:scale-125">
             <Image
               key={i}
               src={`/${bag.src}`}
