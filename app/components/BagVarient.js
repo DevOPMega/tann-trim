@@ -29,7 +29,7 @@ const BagVarient = ({optionSelected, setOptionSelected, handleOptionSelected}) =
             {optionSelected}
             <IoIosArrowDropdown size={18} />
           </div>
-          <div className={`${dropDownOpen ? "block":"hidden"} bg-slate-950 rounded-sm w-[140px] absolute top-8 z-5 flex flex-col`}>
+          <div className={`${dropDownOpen ? "block":"hidden"} bg-slate-950 rounded-sm w-[140px] absolute top-8 z-20 flex flex-col`}>
             {options.map((option, i) => (
               <div 
               key={i}
